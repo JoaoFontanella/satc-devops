@@ -35,7 +35,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.joaofontanella }}/satc-devops:0.0.2 .
+        run: docker build -t joaofontanella/satc-devops:0.0.2 .
 
       - name: Push Docker image
         run: docker push docker.io/${{ secrets.DOCKER_USERNAME }}/satc-devops:0.0.2
