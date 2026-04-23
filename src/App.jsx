@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="container">
       <h1>Dashboard</h1>
+      <p>João Fontanella</p>
       <div className="grid">
         {services.map((service) => (
           <ServiceCard key={service.id} service={service} />
